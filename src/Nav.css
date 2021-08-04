@@ -16,19 +16,22 @@
   transition-timing-function: ease-in;
   transition: all 0.5s;
 }
-.nav_black{
-    background-color: #111;
+.nav_black {
+  background-color: #111;
 }
-.nav_logo, .nav_logo-mobile {
+.nav_logo,
+.nav_logo-mobile {
   width: 100px;
   margin-left: 20px;
 }
-.nav_logo-mobile{
+.nav_logo-mobile {
   display: none;
 }
 .nav_button {
   display: inline-block;
-  min-width: 112px;
+  /* min-width: 112px; */
+  padding: 1em 1.5em;
+  font-weight: 700;
   text-decoration: none;
   line-height: 1em;
   vertical-align: middle;
@@ -41,42 +44,40 @@
   text-align: center;
   border: 0;
 }
-.nav_button:hover{
-    opacity: .7;
-    transition: all .2s;
+.nav_button:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
 }
-.nav_buttons{
-    width: 18%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    right: 40px;
+.nav_buttons {
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 40px;
 }
-.join{
+.join {
   background-color: #e50914;
   background-image: linear-gradient(to bottom, #e50914, #db0510);
   color: #000;
 }
-.sign_in{
-    background-color: #111;
-    border: 1px solid #fff;
-    color: #fff;
-
+.sign_in {
+  background-color: #111;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
-
 @media screen and (max-width: 769px) {
-  .nav_buttons{
+  .nav_buttons {
     position: fixed;
     right: 32px;
     width: 31%;
   }
 }
-@media screen and (max-width: 370px) {
-  .nav_logo{
+@media screen and (max-width: 380px) {
+  .nav_logo {
     display: none;
   }
-  .nav_logo-mobile{
+  .nav_logo-mobile {
     display: block;
     width: 9%;
     margin: 0;
@@ -84,9 +85,11 @@
   .nav_buttons {
     position: fixed;
     right: 16px;
-    width: 52%;
+    width: 46%;
   }
-  .nav_button{
-    min-width: 88px;
+  .nav_button {
+    padding: 1em 1.5em;
+    font-weight: 700;
+    font-size: 0.7em;
   }
 }
